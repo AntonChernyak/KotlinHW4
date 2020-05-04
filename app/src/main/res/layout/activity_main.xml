@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timeTextView"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorDate"
+        app:layout_constraintStart_toEndOf="@+id/avatarImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="24 апреля 2020" />
+
+    <TextView
+        android:id="@+id/authorTextView"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorAuthor"
+        app:layout_constraintEnd_toStartOf="@+id/addressCountryTextView"
+        app:layout_constraintStart_toEndOf="@+id/avatarImageView"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/contentTextView"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:textColor="@color/colorContent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoPlayerImageView"
+        tools:text="First post in our network!" />
+
+    <ImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/commentImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/comment_image"
+        app:layout_constraintBottom_toBottomOf="@+id/likeImageView"
+        app:layout_constraintEnd_toStartOf="@+id/commentsCounterTextView"
+        app:layout_constraintTop_toTopOf="@+id/likeImageView"
+        app:srcCompat="@drawable/ic_comment_off_24dp" />
+
+    <TextView
+        android:id="@+id/commentsCounterTextView"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commentImageView"
+        app:layout_constraintEnd_toStartOf="@+id/shareImageView"
+        app:layout_constraintTop_toTopOf="@+id/commentImageView"
+        tools:text="000" />
+
+    <ImageView
+        android:id="@+id/shareImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/share_image"
+        app:layout_constraintBottom_toBottomOf="@+id/commentImageView"
+        app:layout_constraintEnd_toStartOf="@+id/shareTextViewCounter"
+        app:layout_constraintTop_toTopOf="@+id/commentImageView"
+        app:srcCompat="@drawable/ic_share_off_24dp" />
+
+    <TextView
+        android:id="@+id/shareTextViewCounter"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/shareImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shareImageView"
+        tools:text="000" />
+
+    <ImageView
+        android:id="@+id/likeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/like_image"
+        app:layout_constraintEnd_toStartOf="@+id/likeCounterTextView"
+        app:layout_constraintTop_toBottomOf="@+id/videoViewsCounterTextView"
+        app:srcCompat="@drawable/ic_favorite_off_24dp" />
+
+    <TextView
+        android:id="@+id/likeCounterTextView"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/likeImageView"
+        app:layout_constraintEnd_toStartOf="@+id/commentImageView"
+        app:layout_constraintTop_toTopOf="@+id/likeImageView"
+        tools:text="000" />
+
+    <ImageView
+        android:id="@+id/locationImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/location_button"
+        android:tint="@color/colorLocationButton"
+        app:layout_constraintBottom_toBottomOf="@+id/addressCountryTextView"
+        app:layout_constraintEnd_toEndOf="@+id/contentTextView"
+        app:layout_constraintTop_toTopOf="@+id/addressAreaTextView"
+        app:srcCompat="@drawable/ic_location_on_off_24dp" />
+
+    <TextView
+        android:id="@+id/addressAreaTextView"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="end"
+        android:singleLine="true"
+        app:layout_constraintEnd_toStartOf="@+id/locationImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/timeTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:id="@+id/addressCountryTextView"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@+id/addressAreaTextView"
+        app:layout_constraintTop_toBottomOf="@+id/addressAreaTextView"
+        tools:text="@tools:sample/cities" />
+
+    <ImageView
+        android:id="@+id/videoPlayerImageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/video_play_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatarImageView"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/videoViewsCounterTextView"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/contentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/contentTextView"
+        tools:text="1000 просмотров" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

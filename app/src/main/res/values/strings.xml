@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">First Android App</string>
+    <string name="avatar">avatar</string>
+    <string name="like_image">like_image</string>
+    <string name="comment_image">comment_image</string>
+    <string name="share_image">share_image</string>
+    <string name="time_string">%s назад</string>
+    <string name="just_now">только что</string>
+    <string name="one_day">1 день</string>
+    <string name="few_days">несколько дней</string>
+    <string name="month">месяц</string>
+    <string name="few_months">несколько месяцев</string>
+    <string name="year">год</string>
+    <string name="few_years">несколько лет</string>
+    <string name="location_button">location_button</string>
+    <string name="video_play_button">video_play</string>
+    <string name="video_views">%d просмотров</string>
+
+    <plurals name="plurals_sec">
+        <item quantity="zero">только что</item>
+        <item quantity="one">%1$d секунду</item>
+        <item quantity="two">%1$d секунды</item>
+        <item quantity="few">%1$d секунды</item>
+        <item quantity="many">%1$d секунд</item>
+        <item quantity="other">%1$d секунд</item>
+    </plurals>
+
+    <plurals name="plurals_min">
+        <item quantity="zero">1 минуту</item>
+        <item quantity="one">%1$d минуту</item>
+        <item quantity="two">%1$d минуты</item>
+        <item quantity="few">%1$d минуты</item>
+        <item quantity="many">%1$d минут</item>
+        <item quantity="other">%1$d минут</item>
+    </plurals>
+
+    <plurals name="plurals_hour">
+        <item quantity="zero">1 час</item>
+        <item quantity="one">%1$d час</item>
+        <item quantity="two">%1$d часа</item>
+        <item quantity="few">%1$d часа</item>
+        <item quantity="many">%1$d часов</item>
+        <item quantity="other">%1$d часов</item>
+    </plurals>
+
+</resources>

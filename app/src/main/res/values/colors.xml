@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorLikeRepostShareActionOn">#DD2C00</color>
+    <color name="colorLikeRepostShareActionOff">#BDBDBD</color>
+    <color name="colorContent">#000000</color>
+    <color name="colorAuthor">#000000</color>
+    <color name="colorDate">#999999</color>
+    <color name="colorLocationButton">#DD2C00</color>
+</resources>
